@@ -20,24 +20,24 @@ limitations under the License.
   <title>Router</title>
   <link rel="stylesheet" href="./static/superstyles.css">
   <!--<link rel="preload" href="/">-->
-  <link rel="preload" href="/about/">
-  <link rel="preload" href="/contact/">
-  <link rel="preload" href="/misc/">
+  <link rel="preload" href="./about/">
+  <link rel="preload" href="./contact/">
+  <link rel="preload" href="./misc/">
 </head>
 <body>
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/contact/">Contact</a></li>
-      <li><a href="/misc/">Misc</a></li>
+      <li><a href="./about/">About</a></li>
+      <li><a href="./contact/">Contact</a></li>
+      <li><a href="./misc/">Misc</a></li>
     </ul>
   </nav>
 
   <sc-view class="view-home visible" route="^/$"><div>Home</div></sc-view>
-  <sc-view remote class="view-about" route="^/about/(.*)"></sc-view>
-  <sc-view remote class="view-contact" route="^/contact/(.*)"></sc-view>
-  <sc-view remote class="view-misc" route="^/misc/(.*)"></sc-view>
+  <sc-view remote class="view-about" route="^./about/(.*)"></sc-view>
+  <sc-view remote class="view-contact" route="^./contact/(.*)"></sc-view>
+  <sc-view remote class="view-misc" route="^./misc/(.*)"></sc-view>
 
   <sc-router></sc-router>
   <script defer src="./static/sc-view.js"></script>
